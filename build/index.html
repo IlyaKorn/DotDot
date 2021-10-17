@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dot-Dot</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>FTL: Прямая машина</h1>
+    </header>
+    <main class="page-main">
+      <form class="page-form" action="https://dot-dot.ru/" method="POST">
+        <fieldset class="page-form__section ">
+          <legend>
+            <svg class="page-form__icon-step" width="24" height="24">
+              <use xlink:href="img/sprite.svg#step1"></use>
+            </svg>
+            Маршрут
+          </legend>
+          <div class="page-form__route-from">
+            <label for="route-from">Откуда</label>
+            <input type="text" id="route-from">
+          </div>
+          <div class="page-form__route-before">
+            <label for="route-before">Куда</label>
+            <input type="text" id="route-before">
+          </div>
+        </fieldset>
+        <fieldset class="page-form__section page-form__section--transport">
+          <legend>
+            <svg class="page-form__icon-step" width="24" height="24">
+              <use xlink:href="img/sprite.svg#step2"></use>
+            </svg>
+            Транспорт
+          </legend>
+          <div class="page-form__weight">
+            <p>Грузоподъёмность</p>
+            <div class="page-form__select-wrapper">
+              <select class="page-form__select" name="select-weight">
+                <option value="0" disabled="" selected="">Не выбрана</option>
+                <option value="1">Вариант 1</option>
+                <option value="2">Вариант 2</option>
+                <option value="3">Вариант 3</option>
+                <option value="4">Вариант 4</option>
+                <option value="5">Вариант 5</option>
+              </select>
+              <svg class="page-form__icon-arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="page-form__method">
+            <p>Способ погрузки</p>
+            <div class="page-form__select-wrapper">
+              <select class="page-form__select" name="select-method">
+                <option value="1">Задняя</option>
+                <option value="2">Левая сторона</option>
+                <option value="3">Правая сторона</option>
+              </select>
+              <svg class="page-form__icon-arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="page-form__section page-form__section--cargo">
+          <legend>
+            <svg class="page-form__icon-step" width="24" height="24">
+              <use xlink:href="img/sprite.svg#step3"></use>
+            </svg>
+            Груз
+          </legend>
+          <div class="page-form__type">
+            <p>Тип груза</p>
+            <div class="page-form__select-wrapper">
+              <select class="page-form__select" name="select-type">
+                <option value="0" disabled="" selected="">Не выбран</option>
+                <option value="1">Вариант 1</option>
+                <option value="2">Вариант 2</option>
+                <option value="3">Вариант 3</option>
+                <option value="4">Вариант 4</option>
+                <option value="5">Вариант 5</option>
+              </select>
+              <svg class="page-form__icon-arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="page-form__class">
+            <p>Класс опасности</p>
+            <div class="page-form__select-wrapper">
+              <select class="page-form__select" name="select-class">
+                <option value="5">Класс 5 — Окисляющие вещества и органические перекиси</option>
+                <option value="4">Класс 4 — Окисляющие вещества и органические перекиси</option>
+                <option value="3">Класс 3 — Окисляющие вещества и органические перекиси</option>
+                <option value="2">Класс 2 — Окисляющие вещества и органические перекиси</option>
+                <option value="1">Класс 1 — Окисляющие вещества и органические перекиси</option>
+              </select>
+              <svg class="page-form__icon-arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="page-form__price">
+            <p>Объявленная ценность, ₽</p>
+            <input type="text" placeholder="&ge; 1">
+          </div>
+          <label class="checkbox-temperature" for="checkbox-temperature">
+            Требуется температурный режим
+            <input class="visually-hidden" type="checkbox" name="checkbox-temperature" id="checkbox-temperature">
+            <svg class="page-form__icon-checkbox page-form__icon-checkbox--on" width="24" height="24">
+              <use xlink:href="img/sprite.svg#checkbox-on"></use>
+            </svg>
+            <svg class="page-form__icon-checkbox page-form__icon-checkbox--off" width="24" height="24">
+              <use xlink:href="img/sprite.svg#checkbox-off"></use>
+            </svg>
+          </label>
+          <div class="page-form__temperature">
+            <div class="page-form__temperature-from">
+              <label for="temperature-from">От, °C</label>
+              <input type="text" id="temperature-from" value="-20">
+            </div>
+            <div class="page-form__temperature-before">
+              <label for="temperature-before">До, °C</label>
+              <input type="text" id="temperature-before" value="+23">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="page-form__section page-form__section--timing">
+          <legend>
+            <svg class="page-form__icon-step" width="24" height="24">
+              <use xlink:href="img/sprite.svg#step4"></use>
+            </svg>
+            Время
+          </legend>
+          <div class="page-form__timing">
+            <p>Когда прибыть на точку</p>
+            <p>700 км в день</p>
+          </div>
+          <div class="page-form__address">
+            <div class="page-form__address-from">
+              <svg class="page-form__icon-circle" width="16" height="16">
+                <use xlink:href="img/sprite.svg#circle-red"></use>
+              </svg>
+              <input type="text" placeholder="Адрес не указан">
+              <button type="button">НЕ ВЫБРАНО</button>
+            </div>
+            <div class="page-form__address-before">
+              <svg class="page-form__icon-circle" width="16" height="16">
+                <use xlink:href="img/sprite.svg#circle"></use>
+              </svg>
+              <input type="text" placeholder="Адрес не указан">
+              <button type="button">НЕ ВЫБРАНО</button>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="page-form__section page-form__section--comment">
+          <legend>Комментарий к заказу</legend>
+          <textarea placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__description">
+        <p>Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

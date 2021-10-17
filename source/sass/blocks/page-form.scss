@@ -1,0 +1,368 @@
+.page-form {
+  width: 343px;
+}
+
+.page-form fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+  margin-bottom: 41px;
+}
+
+.page-form legend {
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 32px;
+  position: relative;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+
+.page-form select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.page-form select:focus ~ .page-form__icon-arrow {
+  transform: rotate(-180deg);
+}
+
+.page-form__select-wrapper {
+  position: relative;
+}
+
+.page-form__icon-arrow {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.page-form__icon-step {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.page-form__route-from,
+.page-form__route-before {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-form__route-from {
+  margin-bottom: 16px;
+}
+
+.page-form__route-from label,
+.page-form__route-before label {
+  margin-bottom: 8px;
+}
+
+.page-form__route-from input,
+.page-form__route-before input {
+  outline: none;
+  padding: 13px 10px 10px 14px;
+  border: none;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.page-form__section--transport {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-form__section--transport p {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.page-form__section--transport select {
+  width: 165px;
+  padding: 13px 10px 13px 14px;
+  border: none;
+  outline: none;
+}
+
+.page-form__section--cargo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-form__type,
+.page-form__price {
+  width: 165px;
+  margin-bottom: 20px;
+}
+
+.page-form__type p,
+.page-form__price p,
+.page-form__class p {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.page-form__class {
+  width: 165px;
+  margin-right: 12px;
+  display: none;
+}
+
+.page-form__class select {
+  width: 165px;
+  padding: 13px 32px 13px 14px;
+  border: none;
+  outline: none;
+  min-height: 44px;
+}
+
+.page-form__type {
+  margin-right: 12px;
+}
+
+.page-form__type select {
+  padding: 13px 10px 13px 14px;
+  border: none;
+  width: 100%;
+  height: 44px;
+  outline: none;
+}
+
+.page-form__price input {
+  padding: 13px 10px 13px 14px;
+  border: none;
+  width: 165px;
+  box-sizing: border-box;
+  height: 44px;
+  outline: none;
+}
+
+.checkbox-temperature {
+  padding-left: 36px;
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.page-form__icon-checkbox {
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+
+.page-form__icon-checkbox--on {
+  display: none;
+}
+
+.checkbox-temperature input:checked ~ .page-form__icon-checkbox--off {
+  display: none;
+}
+
+.checkbox-temperature input:checked ~ .page-form__icon-checkbox--on {
+  display: block;
+}
+
+
+.page-form__temperature {
+  display: flex;
+  display: none;
+}
+
+.page-form__temperature label {
+  margin-bottom: 8px;
+}
+
+.page-form__temperature-from,
+.page-form__temperature-before {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-form__temperature-from {
+  margin-right: 12px;
+}
+
+.page-form__temperature input {
+  padding: 13px 10px 13px 14px;
+  border: none;
+  outline: none;
+  width: 165px;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.page-form__section.page-form__section--timing {
+  margin-bottom: 16px;
+}
+
+.page-form__section--timing p {
+  margin: 0;
+}
+
+.page-form__section--timing p:last-of-type {
+  color: #CFCFCF;
+}
+
+.page-form__timing {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.page-form__address {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.page-form__address-from,
+.page-form__address-before {
+  width: 100%;
+  position: relative;
+}
+
+.page-form__address-from {
+  margin-bottom: 4px;
+}
+
+.page-form__icon-circle {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+}
+
+.page-form__address input {
+  padding: 13px 10px 12px 36px;
+  background: #4B4B4F;
+  color: #CFCFCF;
+  border: none;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 44px;
+}
+
+.page-form__address input::placeholder {
+  color: #CFCFCF;
+  width: 100%;
+}
+
+.page-form__address button {
+  background: #717174;
+  border-radius: 2px;
+  padding: 4px 14px 4px 13px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.page-form__address-before button {
+  opacity: 0.3;
+}
+
+.page-form__section--comment legend {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+
+.page-form__section.page-form__section--comment {
+  margin-bottom: 37px;
+}
+
+.page-form__section--comment textarea {
+  resize: none;
+  padding: 13px 0px 10px 14px;
+  box-sizing: border-box;
+  width: 343px;
+  min-height: 80px;
+  border: none;
+}
+
+.page-form__section--comment textarea::placeholder {
+  color: #CFCFCF;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+@media (min-width: 1920px) {
+  .page-form {
+    width: 100%;
+  }
+
+  .page-form legend {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .page-form__section--transport {
+    justify-content: start;
+  }
+
+  .page-form__weight {
+    margin-right: 12px;
+  }
+
+  .page-form__section--cargo {
+    width: 356px;
+  }
+
+  .page-form fieldset.page-form__section--cargo {
+    margin-bottom: 24px;
+  }
+
+  .page-form__type {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .page-form__class {
+    display: block;
+    margin-right: 12px;
+  }
+
+  .page-form__section--comment textarea {
+    width: 100%;
+  }
+
+  .page-form__section--transport select {
+    width: 172px;
+    padding: 13px 10px 13px 14px;
+    min-height: 44px;
+  }
+
+  .page-form__section--transport p {
+    margin-bottom: 6px;
+  }
+
+  .page-form__class,
+  .page-form__price {
+    width: 172px;
+  }
+
+  .page-form__class select,
+  .page-form__price input {
+    width: 100%;
+  }
+
+  .page-form__section--comment legend {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+}

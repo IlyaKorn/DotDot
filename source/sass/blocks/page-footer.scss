@@ -1,0 +1,29 @@
+.page-footer__description {
+  background: #4B4B4F;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  box-sizing: border-box;
+  width: 343px;
+}
+
+.page-footer__description p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 18px;
+  width: 290px;
+  letter-spacing: 0.2px;
+}
+
+@media (min-width: 1920px) {
+  .page-footer__description {
+    position: absolute;
+    left: 914px;
+    top: 128px;
+    width: 356px;
+  }
+
+  .page-footer__description p {
+    margin-right: 0;
+    width: auto;
+  }
+}

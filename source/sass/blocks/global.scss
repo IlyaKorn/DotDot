@@ -1,0 +1,26 @@
+body {
+  font-family: 'HelveticaNeue', 'Arial', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background-color: #343539;
+  margin: 0;
+  max-width: 1920px;
+}
+
+.container {
+  width: 375px;
+  padding-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 728px;
+    padding-top: 40px;
+    padding-left: 170px;
+    margin: 0;
+  }
+}
